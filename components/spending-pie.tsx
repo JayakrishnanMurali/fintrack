@@ -35,7 +35,7 @@ export const SpendingPie = ({ data = [] }: SpendingPieProps) => {
         <CardTitle className="line-clamp-1 text-xl">Categories</CardTitle>
 
         <Select defaultValue={chartType} onValueChange={onTypeChange}>
-          <SelectTrigger className="h-9 rounded-md px-3 lg:w-auto">
+          <SelectTrigger className="h-9 rounded-xl px-3 lg:w-auto">
             <SelectValue placeholder="Chart type" />
           </SelectTrigger>
 

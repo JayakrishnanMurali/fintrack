@@ -44,7 +44,7 @@ const AccountsPage = () => {
         <CardHeader className="gap-y-2 lg:flex-row lg:items-center lg:justify-between">
           <CardTitle className="line-clamp-1 text-xl">Accounts Page</CardTitle>
 
-          <Button size="sm" onClick={newAccount.onOpen}>
+          <Button size="sm" className="rounded-xl" onClick={newAccount.onOpen}>
             <Plus className="mr-2 size-4" /> Add new
           </Button>
         </CardHeader>

@@ -119,7 +119,7 @@ const TransactionsPage = () => {
             <Button
               size="sm"
               onClick={newTransaction.onOpen}
-              className="w-full lg:w-auto"
+              className="w-full rounded-xl  lg:w-auto"
             >
               <Plus className="mr-2 size-4" /> Add new
             </Button>

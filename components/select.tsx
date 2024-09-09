@@ -36,9 +36,37 @@ export const Select = ({
       styles={{
         control: (base) => ({
           ...base,
-          borderColor: "#e2e8f0",
+          borderColor: "#01273b",
+          backgroundColor: "#000f17",
+          color: "#fff",
           ":hover": {
-            borderColor: "#e2e8f0",
+            borderColor: "#01273b",
+          },
+        }),
+        menu: (base) => ({
+          ...base,
+          backgroundColor: "#01273b",
+          color: "#fff",
+        }),
+        menuList: (base) => ({
+          ...base,
+          backgroundColor: "#001f3f", // Ensure the menu list background color matches
+        }),
+        singleValue: (base) => ({
+          ...base,
+          color: "#ffffff", // Color of the selected item in the select box
+        }),
+        option: (base, { isSelected, isFocused }) => ({
+          ...base,
+          backgroundColor: isSelected
+            ? "#003a6b"
+            : isFocused
+              ? "#002a4a"
+              : "#001f3f", // Background color for selected and focused options
+          color: isSelected ? "#ffffff" : "#ffffff", // Color of text for selected options
+          ":active": {
+            ...base[":active"],
+            backgroundColor: isSelected ? "#003a6b" : "#002a4a",
           },
         }),
       }}

@@ -1,5 +1,5 @@
-import { type IconType } from "react-icons";
 import { cva, type VariantProps } from "class-variance-authority";
+import { type IconType } from "react-icons";
 
 import {
   Card,
@@ -13,7 +13,7 @@ import { cn, formatCurrency, formatPercentage } from "@/lib/utils";
 
 import { CountUp } from "./count-up";
 
-const boxVariant = cva("shrink-0 rounded-md p-3", {
+const boxVariant = cva("shrink-0 rounded-xl p-3", {
   variants: {
     variant: {
       default: "bg-blue-500/20",
@@ -62,7 +62,7 @@ export const DataCard = ({
   dateRange,
 }: DataCardProps) => {
   return (
-    <Card className="border-none drop-shadow-sm">
+    <Card className="rounded-xl border-none shadow-gray-800 drop-shadow-md">
       <CardHeader className="flex flex-row items-center justify-between gap-x-4">
         <div className="space-y-2">
           <CardTitle className="line-clamp-1 text-2xl">{title}</CardTitle>

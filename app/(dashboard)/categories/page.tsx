@@ -46,7 +46,7 @@ const CategoriesPage = () => {
             Categories Page
           </CardTitle>
 
-          <Button size="sm" onClick={newCategory.onOpen}>
+          <Button size="sm" className="rounded-xl" onClick={newCategory.onOpen}>
             <Plus className="mr-2 size-4" /> Add new
           </Button>
         </CardHeader>

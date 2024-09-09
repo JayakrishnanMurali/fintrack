@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
 import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -17,8 +17,8 @@ export function convertAmountToMilliunits(amount: number) {
 export function formatCurrency(value: number) {
   return Intl.NumberFormat("en-us", {
     style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
+    currency: "INR",
+    minimumFractionDigits: 0,
   }).format(value);
 }
 

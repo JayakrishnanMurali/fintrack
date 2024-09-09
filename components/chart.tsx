@@ -41,7 +41,7 @@ export const Chart = ({ data = [] }: ChartProps) => {
       <CardHeader className="flex justify-between space-y-2 lg:flex-row lg:items-center lg:space-y-0">
         <CardTitle className="line-clamp-1 text-xl">Transactions</CardTitle>
         <Select defaultValue={chartType} onValueChange={onTypeChange}>
-          <SelectTrigger className="h-9 rounded-md px-3 lg:w-auto">
+          <SelectTrigger className="h-9 rounded-xl px-3 lg:w-auto">
             <SelectValue placeholder="Chart type" />
           </SelectTrigger>
 
